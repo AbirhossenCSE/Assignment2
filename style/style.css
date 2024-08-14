@@ -500,8 +500,13 @@ hr {
     }
     .header-image{
         margin-top: 100px;
+        margin-bottom: 50px;
     }
 
+    .habit-gap{
+        height: 250px;
+    }
+    
     .rutine{
         grid-template-columns: repeat(1, 1fr);
     }
