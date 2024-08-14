@@ -168,6 +168,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
+    padding-bottom: 60px;
 }
 
 .habit-name{
@@ -185,4 +186,67 @@
 }
 .habit-card img{
     border-radius: 50%;
+}
+
+
+
+/* rutine CSS */
+.rutine{
+    max-width: 1100px;
+    height: 400px;
+    background: rgb(34, 34, 34);
+    border-radius: 18px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 30px;
+}
+.routine-content{
+    padding-left: 30px;
+    max-width: 400pc;
+}
+.routine-title{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 800;
+}
+.routine-description{
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+.routine-pic{
+    max-width: 500px;
+    height: 380px;
+    padding: 30px;
+}
+.routine-pic img{
+    width: 100%;
+    border-radius: 18px;
+}
+.routine-btn{
+    border: none;
+    margin-top: 30px;
+    border-radius: 42px;
+    background: rgb(230, 83, 60);
+    padding: 14px 50px;
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+
+/* BMI CSS */
+
+.bmi-title{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 900;
+    text-align: left;
 }
