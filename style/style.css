@@ -448,6 +448,16 @@ td{
   margin-top: 10px;
 }
 
+hr {
+    border: 2px solid rgba(18, 7, 7, 0.1);
+    width: 1100px;           
+    height: 0px;
+    color: black;           
+    margin: 0 auto;
+  }
+
+
+
 .menu-pic{
     display: none;
     width: 20px;
