@@ -85,10 +85,23 @@
 .header-image{
     width: 520px;
     height: 480px;
+    position: relative;
+    right: 2px;
 }
 .header-image img{
     width: 100%;
     height: 100%;
+}
+#btn-positin{
+    position: absolute;
+    top: 100px;
+    right: 100px;
+
+}
+#btn-positin-2{
+    position: absolute;
+    top: 380px;
+    right: 400px;
 }
 
 /* Header Button */
@@ -192,7 +205,7 @@
 /* rutine CSS */
 .rutine{
     max-width: 1100px;
-    height: 400px;
+    /* height: 400px; */
     background: rgb(34, 34, 34);
     border-radius: 18px;
     margin: 0 auto;
@@ -202,7 +215,7 @@
 }
 .routine-content{
     padding-left: 30px;
-    max-width: 400pc;
+    max-width: 400px;
 }
 .routine-title{
     color: rgb(255, 255, 255);
@@ -467,8 +480,13 @@ td{
     .header-image img{
         margin-top: 30px;
     }
+
+    .rutine{
+        grid-template-columns: repeat(1, 1fr);
+    }
     .bmi{
-        margin-left: 30px;
+        margin-left: 0px;
+        
         
     }
     .bmi-content{
@@ -478,11 +496,12 @@ td{
     .habit-cintainer,
     .bmi-cartcal{
         grid-template-columns: repeat(1, 1fr);
-        width: 80%;
+        width: 100%;
 
     }
     .team-container{
         grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
     }
     .main-footer{
         grid-template-columns: repeat(1, 1fr);
