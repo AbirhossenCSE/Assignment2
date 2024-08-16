@@ -11,10 +11,10 @@
 
 
 /* Common Css */
-/* *{
+*{
     margin: 0;
     padding: 0;
-} */
+}
 .display-flex{
     display: flex;
 }
@@ -41,6 +41,7 @@
     max-width: 1200px;
     margin: 0 auto;
     align-items: center;
+    padding-top: 10px;
     
 }
 
@@ -137,18 +138,19 @@
     border: none;
     border-radius: 42px;
     background: rgb(230, 83, 60);
-    padding: 16px 40px 16px 40px;
+    padding: 16px 30px 16px 30px;
     color: rgb(255, 255, 255);
     font-family: Inter;
     font-size: 16px;
     font-weight: 600;
+    margin-right: 5px;
 
 }
 .btn-2{
     border: 1px solid rgb(255, 255, 255);
     border-radius: 42px;
     color: rgb(255, 255, 255);
-    padding: 16px 40px 16px 40px;
+    padding: 16px 30px 16px 30px;
     font-family: Inter;
     font-size: 16px;
     font-weight: 600;
@@ -593,7 +595,7 @@ hr {
     }
 
     .habit-gap{
-        height: 440px;
+        height: 460px;
     }
     
     
