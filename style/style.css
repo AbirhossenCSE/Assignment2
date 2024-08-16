@@ -72,7 +72,7 @@
     justify-content: space-between;
 }
 .header-text{
-    width: 520px;
+    max-width: 520px;
     height: 282px;
     padding: 20px;
 }
@@ -81,6 +81,7 @@
     font-family: Inter;
     font-size: 4rem;
     font-weight: 900;
+    width: 75%;
     
 }
 .header-description{
@@ -92,7 +93,7 @@
 }
 
 .header-image{
-    width: 520px;
+    max-width: 520px;
     height: 560px;
     position: relative;
     right: 2px;
@@ -103,14 +104,16 @@
 }
 #btn-positin{
     position: absolute;
-    top: 120px;
-    right: 100px;
+    top: 140px;
+    right: 10px;
+    padding: 10px 10px;
 
 }
 #btn-positin-2{
     position: absolute;
     top: 440px;
-    right: 400px;
+    right: 280px;
+    padding: 10px 20px;
 }
 
 /* Header Button */
@@ -509,18 +512,25 @@ hr {
         margin-top: 30px;
     }
     .header-image{
-        margin-top: 200px;
+        margin-top: 360px;
         margin-bottom: 50px;
+        margin-left: 30px;
     }
     #btn-positin{
         position: absolute;
-        top: 120px;
-        right: 120px;
+        top: 170px;
+        right: 60px;
     
+    }
+    #btn-positin-2{
+        position: absolute;
+        top: 460px;
+        right: 300px;
+        padding: 10px 20px;
     }
 
     .habit-gap{
-        height: 480px;
+        height: 650px;
     }
     
     
