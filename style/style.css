@@ -80,6 +80,7 @@
     max-width: 520px;
     height: 282px;
     padding: 20px;
+    margin-top: 60px;
 }
 .header-title{
     color: rgb(255, 255, 255);
@@ -592,7 +593,7 @@ hr {
     }
 
     .habit-gap{
-        height: 400px;
+        height: 440px;
     }
     
     
