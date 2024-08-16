@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-
+@import url('https://fonts.cdnfonts.com/css/miama');
 
 .inter-font {
   font-family: "Inter", sans-serif;
@@ -55,6 +55,12 @@
 
 
 /* Header content design */
+
+
+.miama{
+    font-family:miama ;
+    font-size: 8rem;
+    }
 .head{
     height: 600px;
 
@@ -68,6 +74,7 @@
 .header-text{
     width: 520px;
     height: 282px;
+    padding: 20px;
 }
 .header-title{
     color: rgb(255, 255, 255);
@@ -80,11 +87,13 @@
     font-family: Inter;
     font-size: 16px;
     font-weight: 400;
+    width: 70%;
+    
 }
 
 .header-image{
     width: 520px;
-    height: 480px;
+    height: 560px;
     position: relative;
     right: 2px;
 }
@@ -100,7 +109,7 @@
 }
 #btn-positin-2{
     position: absolute;
-    top: 400px;
+    top: 440px;
     right: 400px;
 }
 
@@ -483,7 +492,7 @@ hr {
         display: block;
     }
       
-      .more-options {
+    .more-options {
         display: block;
         position: absolute;
         top: 10px;
@@ -496,16 +505,24 @@ hr {
         gap: 10px;
     }
     .header-image img{
+        width: 80%;
         margin-top: 30px;
     }
     .header-image{
-        margin-top: 100px;
+        margin-top: 200px;
         margin-bottom: 50px;
+    }
+    #btn-positin{
+        position: absolute;
+        top: 120px;
+        right: 120px;
+    
     }
 
     .habit-gap{
-        height: 250px;
+        height: 480px;
     }
+    
     
     .rutine{
         grid-template-columns: repeat(1, 1fr);
@@ -522,7 +539,9 @@ hr {
     .habit-cintainer,
     .bmi-cartcal{
         grid-template-columns: repeat(1, 1fr);
-        width: 100%;
+        width: 90%;
+        margin: auto;
+        padding: 30px;
 
     }
     .team-container{
