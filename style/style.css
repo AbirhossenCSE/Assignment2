@@ -64,6 +64,7 @@
 .miama{
     font-family:miama ;
     font-size: 8rem;
+    line-height: 1.0px;
     }
 .head{
     height: 600px;
@@ -93,6 +94,8 @@
     font-size: 16px;
     font-weight: 400;
     width: 70%;
+    margin-top: 10px;
+    margin-bottom: 20px;
     
 }
 
@@ -277,6 +280,42 @@
 
 
 
+/* Diet Table */
+
+.diet-cart{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 2.4rem;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.diet-table{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(11, 9, 9, 0.358);
+    border-radius: 10px;
+}
+
+.diet-table table {
+    width: 75%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 2px solid white;
+    
+}
+.diet-table th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid white;
+    padding: 10px;
+}
+
+
+
 /* BMI CSS */
 
 .bmi{
@@ -292,12 +331,13 @@
     padding-left: 70px;
     background: rgb(34, 34, 34);
     padding-bottom: 30px;
+    border-radius: 10px;
 }
 .bmi-content,
 .team-content{
     max-width: 600px;
     margin: 0 auto; 
-    padding-top: 50px;
+    
 }
 .bmi-title{
     color: rgb(255, 255, 255);
@@ -305,12 +345,20 @@
     font-size: 2.5rem;
     font-weight: 800;
     text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+.bmi-cart-description{
+    padding-bottom: 15px;
 }
 .bmi-cart-title{
     color: rgb(255, 255, 255);
     font-family: Inter;
     font-size: 28px;
     font-weight: 900;
+    padding-top: 20px;
+    margin-bottom: 20px;
 }
 
 .in-btn{
@@ -334,7 +382,10 @@ input::placeholder {
   }
   
 
-
+  table {
+    width: 80%;
+    border-collapse: collapse;
+}
 
 th{
     color: rgb(255, 255, 255);
@@ -349,10 +400,15 @@ td{
     font-size: 14px;
     font-weight: 400;
     padding: 10px;
+    
   }
   
 
 /* team CSS */
+
+.team-content{
+    margin-top: 40px;
+}
 .team-title{
     color: rgb(255, 255, 255);
     font-family: Inter;
@@ -366,6 +422,7 @@ td{
     font-size: 12px;
     font-weight: 400;
     text-align: center;
+    margin-bottom: 20px;
 }
 .team-container{
     max-width: 1100px;
@@ -374,18 +431,19 @@ td{
     grid-template-columns: repeat(3, 1fr);
     border-radius: 18px;
     background: rgba(255, 255, 255, 0.1);
-    padding: 30px;
+    
 }
 .box{
     width: 300px;
     height: 300px;
-    
+    padding: 10px;
     position: relative;
 }
 .box img{
     width: 100%;
     height: 100%;
     border-radius: 18px;
+    
 }
 .box h3{
     color: rgb(255, 255, 255);
@@ -512,18 +570,18 @@ hr {
         gap: 10px;
     }
     .header-image img{
-        width: 80%;
+        width: 100%;
         margin-top: 30px;
     }
     .header-image{
-        margin-top: 360px;
+        margin-top: 150px;
         margin-bottom: 50px;
         margin-left: 30px;
     }
     #btn-positin{
         position: absolute;
         top: 170px;
-        right: 60px;
+        right: 40px;
     
     }
     #btn-positin-2{
@@ -534,7 +592,7 @@ hr {
     }
 
     .habit-gap{
-        height: 650px;
+        height: 400px;
     }
     
     
@@ -547,7 +605,7 @@ hr {
         
     }
     .bmi-content{
-        width: 100%;
+        width: 90%;
     }
 
     .habit-cintainer,
@@ -561,6 +619,9 @@ hr {
     .team-container{
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
+    }
+    .box{
+        margin: 0 auto;
     }
     .main-footer{
         grid-template-columns: repeat(1, 1fr);
