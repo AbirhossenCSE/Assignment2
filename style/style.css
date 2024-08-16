@@ -158,6 +158,13 @@
 
 }
 
+.red-circle{
+    width: 45px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: red;
+    margin-top: 10%;
+}
 .img-btn{
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
