@@ -81,26 +81,7 @@ const displayCategories = (categories) => {
     
 }
 
-// // Create displayCatagories
-// const displayCategories = (categories) => {
-//     const categoriesContainer = document.getElementById('categories');
 
-//     categories.forEach((item)=> {
-//         console.log(item);
-        
-//         // Create a button
-//         const button = document.createElement('button');
-//         button.classList = 'btn';
-//         button.innerText = item.category;
-
-//         // Buttin onClick
-//         // button.onclick = alert('Hello')
-
-//         // add button at category container
-//         categoriesContainer.appendChild(button);
-//     });
-    
-// }
 
 loadCategories();
 
@@ -113,6 +94,23 @@ loadCategories();
 // thumbnail: "https://i.ibb.co/L1b6xSq/shape.jpg"
 // title: "Shape of You"
 // video_id: "aaaa"
+const loadDetails = async (videoId) => {
+    console.log(videoId);
+    const uri = `https://openapi.programming-hero.com/api/phero-tube/video/${videoId}`;
+    const res = await fetch(uri);
+    const data = await res.json();
+    displayDetails(data.video)
+}
+
+const displayDetails = (video) => {
+    console.log(video);
+    
+    const detailContainer = document.getElementById('modal-content');
+    // // way-1
+    // document.getElementById("showModalData").click();
+    // way-1
+    // document.getElementById('customModal').showModal();
+}
 
 // Create loadVideos section
 const displayVideos = (videos) => {
@@ -157,7 +155,7 @@ const displayVideos = (videos) => {
                         <p class="text-gray-400">${video.authors[0].profile_name}</p>
                         ${video.authors[0].verified === true ? '<img class="w-5" src="https://img.icons8.com/?size=48&id=63760&format=png" />' : ""}
                     </div>
-                    <p></p>
+                    <p><button onclick="loadDetails(${video.video_id})" class=" btn btn-sm btn-error">Details</button></p>
                 </div>
             </div>
         `;

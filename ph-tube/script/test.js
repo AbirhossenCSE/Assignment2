@@ -21,3 +21,23 @@ function getTimeString(time){
 
 console.log(getTimeString(4505));
 
+// Create displayCatagories
+const displayCategories = (categories) => {
+    const categoriesContainer = document.getElementById('categories');
+
+    categories.forEach((item)=> {
+        console.log(item);
+        
+        // Create a button
+        const button = document.createElement('button');
+        button.classList = 'btn';
+        button.innerText = item.category;
+
+        // Buttin onClick
+        // button.onclick = alert('Hello')
+
+        // add button at category container
+        categoriesContainer.appendChild(button);
+    });
+    
+}
