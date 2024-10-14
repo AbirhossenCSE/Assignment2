@@ -106,10 +106,14 @@ const displayDetails = (video) => {
     console.log(video);
     
     const detailContainer = document.getElementById('modal-content');
+    detailContainer.innerHTML = `
+        <img src=${video.thumbnail} />
+        <p>${video.description}</p>
+    `;
     // // way-1
     // document.getElementById("showModalData").click();
     // way-1
-    // document.getElementById('customModal').showModal();
+    document.getElementById('customModal').showModal();
 }
 
 // Create loadVideos section
@@ -155,7 +159,7 @@ const displayVideos = (videos) => {
                         <p class="text-gray-400">${video.authors[0].profile_name}</p>
                         ${video.authors[0].verified === true ? '<img class="w-5" src="https://img.icons8.com/?size=48&id=63760&format=png" />' : ""}
                     </div>
-                    <p><button onclick="loadDetails(${video.video_id})" class=" btn btn-sm btn-error">Details</button></p>
+                    <p><button onclick="loadDetails('${video.video_id}')" class=" btn btn-sm btn-error">Details</button></p>
                 </div>
             </div>
         `;
