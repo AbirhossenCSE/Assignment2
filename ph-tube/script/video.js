@@ -19,8 +19,8 @@ const loadCategories = () => {
 }
 
 // Create LoadVideos
-const loadVideos = () => {
-    fetch('https://openapi.programming-hero.com/api/phero-tube/videos')
+const loadVideos = (searchText = "") => {
+    fetch(`https://openapi.programming-hero.com/api/phero-tube/videos?title=${searchText}`)
     .then((res) => res.json())
     // .then((data) => console.log(data.categories))
     .then((data) => displayVideos(data.videos))
@@ -168,6 +168,11 @@ const displayVideos = (videos) => {
     })
     
 }
+
+document.getElementById('search-input').addEventListener('keyup', (e) => {
+    loadVideos(e.target.value);
+    
+})
 loadVideos()
 
 
