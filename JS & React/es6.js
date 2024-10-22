@@ -21,3 +21,15 @@ const doMath = (num1, num2) => {
 }
 const output = doMath(12, 21);
 console.log(output);
+
+
+const newNumbers = [...numbers];
+// Create a new array from an older array and add new element
+const currentNumbers = [...numbers, 55];
+
+numbers.push(99);
+console.log(newNumbers);
+
+// const newNumbers2 = [...numbers];
+// console.log(newNumbers2);
+console.log(currentNumbers);
