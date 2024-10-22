@@ -3,7 +3,8 @@ const person = {
     proffesion: 'Trafic serjon',
     age: 34,
     address: 'mirpur',
-    25: 'summer'
+    25: 'summer',
+    'abir': 'abir5'
 }
 
 // dot notation
@@ -17,3 +18,5 @@ console.log(prof2);
 const prof3 = person[25];
 console.log(prof3);
 
+const prof4 = person['abir'];
+console.log(prof4);
