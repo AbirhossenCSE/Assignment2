@@ -14,6 +14,8 @@ function App() {
       <Device name="Mobile" Price="15"></Device>
       <Device name="Mobile" Price="5"></Device>
       <Person></Person>
+      <Student grade="7" score="99"></Student>
+      <Student grade="9" score="89"></Student>
       <Student></Student>
       <Devloper></Devloper>
       
@@ -22,7 +24,7 @@ function App() {
 }
 
 function Device(props){
-  console.log(props);
+  // console.log(props);
   
   return <h2>Laptop: {props.name} Price: {props.Price} </h2>
 }
@@ -34,11 +36,14 @@ function Person(){
   return <h2>I am {person.name} Hossen. I am {age} years old. I have ${money} Tk.</h2>
 }
 
-function Student(){
+const {grade, score} = {grade: '7', score: '99'};
+function Student({grade=1, score=0}){
+  console.log(grade, score);
+  
   return (
     <div className='student'>
-      <h3>Name: </h3>
-      <h3>Age: </h3>
+      <h3>Grade: {grade} </h3>
+      <h3>Score: {score} </h3>
     </div>
   )
 }
