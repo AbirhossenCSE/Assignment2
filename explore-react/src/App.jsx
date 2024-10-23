@@ -4,6 +4,8 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Actor from './Actor'
 import Singer from './Singer'
+import BookStore from './bookstore'
+
 
 function App() {
   const actor = ['sakib', 'raj', 'jasim', 'Rubel', 'salman Shah'];
@@ -14,10 +16,18 @@ function App() {
     {id: 4, name: 'AR Rahman', age: 36}
   ]
 
+  const books = [
+    {id: 1, name: 'Physics', price: 660},
+    {id: 2, name: 'Math', price: 460},
+    {id: 3, name: 'biology', price: 400},
+    {id: 4, name: 'CAO', price: 360}
+  ]
+
   return (
     <>
       
       <h1>Vite + React</h1>
+      <BookStore books={books}></BookStore>
 
       {
         singers.map(singer => <Singer singer={singer}></Singer>)
