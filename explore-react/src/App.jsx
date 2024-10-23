@@ -10,6 +10,9 @@ function App() {
     <>
       
       <h1>Vite + React</h1>
+      <Device name="Laptop" Price="55"></Device>
+      <Device name="Mobile" Price="15"></Device>
+      <Device name="Mobile" Price="5"></Device>
       <Person></Person>
       <Student></Student>
       <Devloper></Devloper>
@@ -17,6 +20,13 @@ function App() {
     </>
   )
 }
+
+function Device(props){
+  console.log(props);
+  
+  return <h2>Laptop: {props.name} Price: {props.Price} </h2>
+}
+
 function Person(){
   const age = 22;
   const money = 20;
