@@ -12,6 +12,7 @@ function App() {
       <h1>Vite + React</h1>
       <Person></Person>
       <Student></Student>
+      <Devloper></Devloper>
       
     </>
   )
@@ -25,9 +26,24 @@ function Person(){
 
 function Student(){
   return (
-    <div>
+    <div className='student'>
       <h3>Name: </h3>
       <h3>Age: </h3>
+    </div>
+  )
+}
+
+function Devloper(){
+  const devloperStyle = {
+    margin: '20px',
+    padding: '20px',
+    border: '2px solid purple',
+    borderRadius: '20px'
+  }
+  return (
+    <div style={devloperStyle}>
+      <h3>Devloper</h3>
+      <p>Coding: </p>
     </div>
   )
 }
