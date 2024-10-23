@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Todo from './Todo'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -10,14 +11,17 @@ function App() {
     <>
       
       <h1>Vite + React</h1>
-      <Device name="Laptop" Price="55"></Device>
+      <Todo task="Learn React" isDone={true}></Todo>
+      <Todo task="Explore React" isDone={false}></Todo>
+      <Todo task="Try JSX" isDone={true}></Todo>
+      {/* <Device name="Laptop" Price="55"></Device>
       <Device name="Mobile" Price="15"></Device>
       <Device name="Mobile" Price="5"></Device>
       <Person></Person>
       <Student grade="7" score="99"></Student>
       <Student grade="9" score="89"></Student>
       <Student></Student>
-      <Devloper></Devloper>
+      <Devloper></Devloper> */}
       
     </>
   )
